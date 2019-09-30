@@ -23,7 +23,7 @@ namespace ControleVeiculos2019
                       "~/Scripts/bootstrap.js"));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
-                      "~/Content/bootstrap.css",
+                      "~/Content/bootstrap-lumentheme.css",
                       "~/Content/site.css"));
         }
     }

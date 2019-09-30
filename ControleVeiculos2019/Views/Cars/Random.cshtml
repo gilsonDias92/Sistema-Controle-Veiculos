@@ -1,9 +1,25 @@
-﻿@model ControleVeiculos2019.Models.Car
+﻿@model ControleVeiculos2019.ViewModels.RandomCarViewModel
 
 @{
     ViewBag.Title = "Random";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>@Model.Name</h2>
+@{ 
+    var className = Model.Customers.Count > 5 ? "doSomething" : null;
+}
 
+@* it's getting the name from the viewModel propertie not the Car class itself. *@
+<h2 class="className">@Model.Car.Name</h2>
+
+@if (Model.Customers.Count == 0)
+{
+    <p>No one has bought this model before.</p>
+}
+
+<ul>
+    @foreach (var customer in Model.Customers)
+    {
+        <li>@customer.Name</li>   
+    }
+</ul>

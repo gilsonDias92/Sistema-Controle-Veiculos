@@ -13,11 +13,13 @@ namespace ControleVeiculos2019
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
+            routes.MapMvcAttributeRoutes();
+
             //it goes from the most especific to the more generic one
-            routes.MapRoute("CarsByYear",
-                "cars/carsbyyear/{year}",
-                new { controller = "Cars", action = "CarsByYear" },
-                new { year = @"\d{4}"}); // it must have 4 digits
+            //routes.MapRoute("CarsByYear",
+            //    "cars/carsbyyear/{year}",
+            //    new { controller = "Cars", action = "CarsByYear" },
+            //    new { year = @"\d{4}"}); // it must have 4 digits
 
 
             routes.MapRoute(

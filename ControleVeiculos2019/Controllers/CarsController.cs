@@ -9,6 +9,30 @@ namespace ControleVeiculos2019.Controllers
 {
     public class CarsController : Controller
     {
+        //testing parameters
+        public ActionResult Index(int? pageIndex, string sortBy)
+        {
+            var cars = new List<Car>
+            {
+                new Car{Id = 1, Name = "Car Number 1"},
+                new Car{Id = 2, Name = "Car Number 2"},
+                new Car{Id = 3, Name = "Car Number 3"},
+                new Car{Id = 4, Name = "Car Number 4"},
+                new Car{Id = 5, Name = "Car Number 5"}
+            };
+
+            if (!pageIndex.HasValue)
+                pageIndex = 1;
+
+            if (String.IsNullOrEmpty(sortBy))
+                sortBy = "Name";
+
+            //return Content(String.Format("pageIndex={0}&sortBy={1}", pageIndex, sortBy));
+
+            return View(cars);
+        }
+
+
         // GET: Cars/Random
         public ActionResult Random()
         {
@@ -21,7 +45,18 @@ namespace ControleVeiculos2019.Controllers
             };
 
             //retorna uma view renderizando o obj
-            return View(car);
+            return View(car);     //or return new ViewResult();
+        }
+
+        public ActionResult Edit(int id)
+        {
+            return Content($"id = {id}");
+        }
+
+
+        public ActionResult CarsByYear(int year)
+        {
+            return Content(year.ToString());
         }
     }
 }

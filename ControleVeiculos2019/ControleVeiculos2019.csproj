@@ -199,9 +199,14 @@
     <Compile Include="Migrations\201910032008085_PopulateCustomers.Designer.cs">
       <DependentUpon>201910032008085_PopulateCustomers.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201910032112094_AddCarTableAndCarBrandTable.cs" />
+    <Compile Include="Migrations\201910032112094_AddCarTableAndCarBrandTable.Designer.cs">
+      <DependentUpon>201910032112094_AddCarTableAndCarBrandTable.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Car.cs" />
+    <Compile Include="Models\CarBrand.cs" />
     <Compile Include="Models\Customer.cs" />
     <Compile Include="Models\CustomerType.cs" />
     <Compile Include="Models\IdentityModels.cs" />
@@ -308,6 +313,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201910032008085_PopulateCustomers.resx">
       <DependentUpon>201910032008085_PopulateCustomers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201910032112094_AddCarTableAndCarBrandTable.resx">
+      <DependentUpon>201910032112094_AddCarTableAndCarBrandTable.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

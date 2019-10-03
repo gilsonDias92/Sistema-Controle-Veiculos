@@ -110,3 +110,4 @@ C:\Users\gilsi\Desktop\Sistema-Controle-Veiculos\ControleVeiculos2019\obj\Debug\
 C:\Users\gilsi\Desktop\Sistema-Controle-Veiculos\ControleVeiculos2019\obj\Debug\ControleVeiculos2019.Migrations.PopulateCustomerType.resources
 C:\Users\gilsi\Desktop\Sistema-Controle-Veiculos\ControleVeiculos2019\obj\Debug\ControleVeiculos2019.Migrations.ApplyAnnotationsToCustomerName.resources
 C:\Users\gilsi\Desktop\Sistema-Controle-Veiculos\ControleVeiculos2019\obj\Debug\ControleVeiculos2019.Migrations.PopulateCustomers.resources
+C:\Users\gilsi\Desktop\Sistema-Controle-Veiculos\ControleVeiculos2019\obj\Debug\ControleVeiculos2019.Migrations.AddCarTableAndCarBrandTable.resources

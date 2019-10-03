@@ -11,21 +11,24 @@
     <p>Sorry, we don't have any car to display.</p>
 }
 
-<table class="table table-bordered table-hover">
-    <thead>
-        <tr>
-            <th>Car</th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var car in Model)
-        {
+else
+{
+    <table class="table table-bordered table-hover">
+        <thead>
             <tr>
-                <td>
-                    @Html.ActionLink(car.Name, "Details",
-                    "Cars", new { id = car.Id }, null)
-                </td>
+                <th>Carros</th>
             </tr>
-        }
-    </tbody>
-</table>
+        </thead>
+        <tbody>
+            @foreach (var car in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.ActionLink(car.ModelName, "Details",
+                        "Cars", new { id = car.Id }, null)
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}

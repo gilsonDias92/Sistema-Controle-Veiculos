@@ -2,6 +2,7 @@
 using ControleVeiculos2019.ViewModels;
 using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
@@ -10,27 +11,28 @@ namespace ControleVeiculos2019.Controllers
 {
     public class CarsController : Controller
     {
-        //testing parameters
-        public ActionResult Index(int? pageIndex, string sortBy)
+        ApplicationDbContext _context;
+
+        public CarsController()
         {
-            var cars = GetCars();
-            return View(cars);
+            _context = new ApplicationDbContext();
         }
 
-        public IEnumerable<Car> GetCars()
+        protected override void Dispose(bool disposing)
         {
-            return new List<Car>
-            {
-                new Car{Id = 1, Name = "Car Number 1"},
-                new Car{Id = 2, Name = "Car Number 2"},
-                new Car{Id = 3, Name = "Car Number 3"},
-                new Car{Id = 4, Name = "Car Number 4"}
-            };
+            _context.Dispose();
+        }
+
+        //testing parameters
+        public ActionResult Index()
+        {
+            var cars = _context.Cars.Include(c => c.CarBrand).ToList();
+            return View(cars);
         }
 
         public ActionResult Details(int id)
         {
-            var car = GetCars().SingleOrDefault(c => c.Id == id);
+            var car = _context.Cars.SingleOrDefault(c => c.Id == id);
 
             if (car == null)
                 return HttpNotFound();

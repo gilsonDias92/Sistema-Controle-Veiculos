@@ -11,7 +11,7 @@
 *@
 
 @{
-    ViewBag.Title = "Customers";
+    ViewBag.Title = "Clientes";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
@@ -25,9 +25,9 @@
 <table class="table table-bordered table-hover">
     <thead>
         <tr>
-            <th>Customer</th>
-            <th>Is Subscribed?</th>
-            <th>Discount Rate</th>
+            <th>Nome</th>
+            <th>É Membro?</th>
+            <th>Desconto</th>
         </tr>
     </thead>
     <tbody>
@@ -39,7 +39,7 @@
                     "Customers", new { id = cust.Id }, null)
                 </td>
                 <td>
-                    @{ string isSubscribed = (cust.IsSubscribed) ? "Yes" : "No"; }
+                    @{ string isSubscribed = (cust.IsSubscribed) ? "Sim" : "Não"; }
 
                     @isSubscribed
                 </td>

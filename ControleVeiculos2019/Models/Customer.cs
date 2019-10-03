@@ -13,6 +13,7 @@ namespace ControleVeiculos2019.Models
         [StringLength(100)]
         public string Name { get; set; }
         public bool IsSubscribed { get; set; }
+        public DateTime? BirthDate { get; set; }
         public CustomerType CustomerType { get; set; }
         public byte CustomerTypeId { get; set; }
     }

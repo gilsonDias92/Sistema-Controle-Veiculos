@@ -175,9 +175,35 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201910022240404_InitialModel.cs" />
+    <Compile Include="Migrations\201910022240404_InitialModel.Designer.cs">
+      <DependentUpon>201910022240404_InitialModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201910022304388_AddIsSubscribedToCustomer.cs" />
+    <Compile Include="Migrations\201910022304388_AddIsSubscribedToCustomer.Designer.cs">
+      <DependentUpon>201910022304388_AddIsSubscribedToCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201910022311469_AddCustomerType.cs" />
+    <Compile Include="Migrations\201910022311469_AddCustomerType.Designer.cs">
+      <DependentUpon>201910022311469_AddCustomerType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201910022330395_PopulateCustomerType.cs" />
+    <Compile Include="Migrations\201910022330395_PopulateCustomerType.Designer.cs">
+      <DependentUpon>201910022330395_PopulateCustomerType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201910030029177_ApplyAnnotationsToCustomerName.cs" />
+    <Compile Include="Migrations\201910030029177_ApplyAnnotationsToCustomerName.Designer.cs">
+      <DependentUpon>201910030029177_ApplyAnnotationsToCustomerName.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201910032008085_PopulateCustomers.cs" />
+    <Compile Include="Migrations\201910032008085_PopulateCustomers.Designer.cs">
+      <DependentUpon>201910032008085_PopulateCustomers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Car.cs" />
     <Compile Include="Models\Customer.cs" />
+    <Compile Include="Models\CustomerType.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -263,6 +289,26 @@
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.3.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.3.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201910022240404_InitialModel.resx">
+      <DependentUpon>201910022240404_InitialModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201910022304388_AddIsSubscribedToCustomer.resx">
+      <DependentUpon>201910022304388_AddIsSubscribedToCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201910022311469_AddCustomerType.resx">
+      <DependentUpon>201910022311469_AddCustomerType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201910022330395_PopulateCustomerType.resx">
+      <DependentUpon>201910022330395_PopulateCustomerType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201910030029177_ApplyAnnotationsToCustomerName.resx">
+      <DependentUpon>201910030029177_ApplyAnnotationsToCustomerName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201910032008085_PopulateCustomers.resx">
+      <DependentUpon>201910032008085_PopulateCustomers.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

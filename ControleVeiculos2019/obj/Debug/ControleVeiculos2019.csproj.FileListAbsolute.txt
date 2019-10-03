@@ -103,3 +103,10 @@ C:\Users\gilsi\Desktop\Sistema-Controle-Veiculos\ControleVeiculos2019\obj\Debug\
 C:\Users\gilsi\Desktop\Sistema-Controle-Veiculos\ControleVeiculos2019\obj\Debug\ControleVeiculos2019.csproj.CopyComplete
 C:\Users\gilsi\Desktop\Sistema-Controle-Veiculos\ControleVeiculos2019\obj\Debug\ControleVeiculos2019.dll
 C:\Users\gilsi\Desktop\Sistema-Controle-Veiculos\ControleVeiculos2019\obj\Debug\ControleVeiculos2019.pdb
+C:\Users\gilsi\Desktop\Sistema-Controle-Veiculos\ControleVeiculos2019\obj\Debug\ControleVeiculos2019.Migrations.InitialModel.resources
+C:\Users\gilsi\Desktop\Sistema-Controle-Veiculos\ControleVeiculos2019\obj\Debug\ControleVeiculos2019.csproj.GenerateResource.cache
+C:\Users\gilsi\Desktop\Sistema-Controle-Veiculos\ControleVeiculos2019\obj\Debug\ControleVeiculos2019.Migrations.AddIsSubscribedToCustomer.resources
+C:\Users\gilsi\Desktop\Sistema-Controle-Veiculos\ControleVeiculos2019\obj\Debug\ControleVeiculos2019.Migrations.AddCustomerType.resources
+C:\Users\gilsi\Desktop\Sistema-Controle-Veiculos\ControleVeiculos2019\obj\Debug\ControleVeiculos2019.Migrations.PopulateCustomerType.resources
+C:\Users\gilsi\Desktop\Sistema-Controle-Veiculos\ControleVeiculos2019\obj\Debug\ControleVeiculos2019.Migrations.ApplyAnnotationsToCustomerName.resources
+C:\Users\gilsi\Desktop\Sistema-Controle-Veiculos\ControleVeiculos2019\obj\Debug\ControleVeiculos2019.Migrations.PopulateCustomers.resources

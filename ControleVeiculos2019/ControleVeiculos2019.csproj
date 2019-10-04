@@ -203,6 +203,14 @@
     <Compile Include="Migrations\201910032112094_AddCarTableAndCarBrandTable.Designer.cs">
       <DependentUpon>201910032112094_AddCarTableAndCarBrandTable.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201910032351179_PopulateCarBrand.cs" />
+    <Compile Include="Migrations\201910032351179_PopulateCarBrand.Designer.cs">
+      <DependentUpon>201910032351179_PopulateCarBrand.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201910040002012_PopulateCar.cs" />
+    <Compile Include="Migrations\201910040002012_PopulateCar.Designer.cs">
+      <DependentUpon>201910040002012_PopulateCar.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Car.cs" />
@@ -316,6 +324,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201910032112094_AddCarTableAndCarBrandTable.resx">
       <DependentUpon>201910032112094_AddCarTableAndCarBrandTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201910032351179_PopulateCarBrand.resx">
+      <DependentUpon>201910032351179_PopulateCarBrand.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201910040002012_PopulateCar.resx">
+      <DependentUpon>201910040002012_PopulateCar.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

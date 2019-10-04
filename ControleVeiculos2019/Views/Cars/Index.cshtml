@@ -1,6 +1,6 @@
 ﻿@model IEnumerable<ControleVeiculos2019.Models.Car>
 @{
-    ViewBag.Title = "Cars";
+    ViewBag.Title = "Carros";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
@@ -10,24 +10,36 @@
 {
     <p>Sorry, we don't have any car to display.</p>
 }
-
 else
 {
-    <table class="table table-bordered table-hover">
+    <table class="table table-bordered table-hover" style="width: 80%;">
         <thead>
             <tr>
-                <th>Carros</th>
+                <th>Marca</th>
+                <th>Modelo</th>
+                <th>Ano</th>
+                <th>Valor</th>
+                <th>Adicionado em</th>
+                <th></th>
             </tr>
         </thead>
         <tbody>
             @foreach (var car in Model)
             {
-                <tr>
-                    <td>
-                        @Html.ActionLink(car.ModelName, "Details",
-                        "Cars", new { id = car.Id }, null)
-                    </td>
-                </tr>
+                <a >
+                    <tr>
+                        <td>
+                            @car.CarBrand.BrandName
+                        </td>
+                        <td>
+                            @car.ModelName
+                        </td>
+                        <td>@car.Year</td>
+                        <td>@car.Price.ToString("#,###.00")</td>
+                        <td>@car.DateAdded.ToString("dd/MM/yyyy")</td>
+                        <td><a href="~/Cars/details/@car.Id">Detalhes</a></td>
+                    </tr>
+                </a>
             }
         </tbody>
     </table>
